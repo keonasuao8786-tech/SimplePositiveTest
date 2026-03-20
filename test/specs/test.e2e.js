@@ -6,7 +6,7 @@ describe('My Login application', () => {
     it('should login with valid credentials', async () => {
         await LoginPage.open()
 
-        await LoginPage.login('standard_user', 'secret_sauce!')
+        await LoginPage.login('standard_user', 'secret_sauce')
     })
     it('should be locked out of logging in', async () => {
         await LoginPage.open()
