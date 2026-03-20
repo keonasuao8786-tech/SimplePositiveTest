@@ -1,4 +1,3 @@
-import { $ } from '@wdio/globals'
 import Window from './browser.js';
 
 /**
