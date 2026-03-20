@@ -16,4 +16,16 @@ describe('My Login application', () => {
         await LoginPage.open()
         await LoginPage.login('problem_user', 'secret_sauce')
     })
+    it('should login with valid credentials', async () => {
+        await LoginPage.open()
+        await LoginPage.login('performance_glitch_user', 'secret_sauce')
+    })
+    it('should login with valid credentials', async () => {
+        await LoginPage.open()
+        await LoginPage.login('error_user', 'secret_sauce')
+    })
+     it('should login with valid credentials', async () => {
+        await LoginPage.open()
+        await LoginPage.login('visual_user', 'secret_sauce')
+    })
 })
