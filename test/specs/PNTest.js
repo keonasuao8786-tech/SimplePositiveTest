@@ -7,6 +7,8 @@ describe('Login Application - Positive Tests', () => {
             await LoginPage.open()
     
             await LoginPage.login('standard_user', 'secret_sauce')
+            await LoginPage.logout()
+            await expect(LoginPage.inputUsername)toExist()
         })
      it('should be locked out of logging in', async () => {
             await LoginPage.open()
