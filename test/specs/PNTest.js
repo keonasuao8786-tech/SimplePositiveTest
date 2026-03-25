@@ -11,7 +11,8 @@ describe('Login Application - Positive Tests', () => {
             
             if (LoginPage.allUsernames[i] === 'locked_out_user') {
                 await expect(LoginPage.errorMessage).toExist()
-            } else {
+            }
+            else {
                 await expect(LoginPage.hamburgerMenu).toBeDisplayed()
                 await LoginPage.logout()
                 await expect(LoginPage.inputUsername).toExist()
